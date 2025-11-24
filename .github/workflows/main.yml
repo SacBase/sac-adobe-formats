@@ -14,8 +14,4 @@ jobs:
       - name: Configure sac2c
         run: cp -r /root/.sac2crc $HOME/.sac2crc
       - name: Build
-        run: |
-          mkdir build
-          cd build
-          cmake ..
-          make
+        run: make
